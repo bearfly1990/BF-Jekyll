@@ -22,10 +22,22 @@ layout: default
     <!-- } -->
     <!-- {% endif %} -->
 <!-- </style> -->
+<!-- Post Header -->
 <style type="text/css">
+    {% comment %} 第一步：获取头图路径（兼容所有Jekyll版本） {% endcomment %}
+    {% if page.header-img %}
+        {% assign header_img = page.header-img %}
+    {% else %}
+        {% assign header_img = site.header-img %}
+    {% endif %}
+    
+    {% comment %} 第二步：拼接baseurl并处理双斜杠 {% endcomment %}
+    {% assign full_path = site.baseurl | append: header_img %}
+    {% assign full_path = full_path | replace: '//', '/' %}
+
     header.intro-header{
         position: relative;
-        background-image: url('{{ site.baseurl | append: (page.header-img | default: site.header-img) | replace: '//', '/' }}')
+        background-image: url('{{ full_path }}')
     }
 
     {% if page.header-mask %}
