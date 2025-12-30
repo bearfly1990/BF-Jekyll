@@ -5,9 +5,9 @@ header-img: img/post-bg-desk.jpg
 email: bearfly1990@163.com
 description: "Embrace life as it is, Cherish what you have now"
 keyword: "BF, BF Blog, 有熊在飞"
-url: "http://127.0.0.1:4000"          # your host, for absolute URL
+url: "https://bearfly1990.github.io/BF-Jekyll"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/bearfly1990/bearfly1990.github.io.git" # you code repository
+github_repo: "https://github.com/bearfly1990/BF-Jekyll.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
